@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> <!-- script de implementação do jQuery, necessário para usar o ajax que envia dados para o google forms-->
+		<title>Voar Legal</title>
+		<link rel="icon" href="favicon.ico" type="image/x-icon">
+		<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1"> <!-- style para mobile -->
+		<link rel="stylesheet" type="text/css" href="css/index.css">
+
+	</head>
+	<body>
+		</header>
+		<main>
+			
+			<section class="container">
+				
+				<form>
+					<!-- Imagem -->
+					<section>
+						<div class="row">
+		  					<div class="col-xs-6 col-md-offset-3">	
+								<img src="img/empresa.jpg" class="img-thumbnail">
+							</div>
+						</div>
+						<div class="row">
+		  					<div class="col-xs-6 col-md-offset-3">
+		  						<label for="numero-voo">Teste nome</label>	
+								<input name="entry.2005620554" id="aaa-00" type="text" class="form-control" placeholder="digite nome">
+							</div>
+						</div><script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> <!-- script de implementação do jQuery, necessário para usar o ajax que envia dados para o google forms-->
+					</section>
+					
+					<!-- Parte base, campos pra todas as opções -->
+					<section class="base">		
+						<div class="row">
+		  					<div class="col-xs-4">
+								<div class="grupo">
+									<label for="nome-companhia">Companhia:</label>						 
+									<select name="entry.1045781291" id="aaa-01" class="form-control">
+										<option disabled selected value="">Escolha...</option>
+										<option value="gol">Gol</option>
+										<option value="tam">Tam</option>
+										<option value="azul">Azul</option>
+										<option value="avianca">Avianca</option>
+										<option value="outra">Outra</option>
+									</select>
+								</div>
+							</div>
+
+							<div class="col-xs-4">
+								<label for="numero-voo">Nº do voo:</label>
+								<input name="entry.1065046570" id="aaa-02" type="text" class="form-control" placeholder="Digite Nº">
+		  					</div>
+
+							<div class="col-xs-4">
+								<div id="problema-1" class="grupo">
+									<label for="tipo-problema">Problema:</label>
+									<select name="entry.1166974658" id="aaa-1" class="form-control">
+										<option disabled selected value="">Escolha...</option>
+										<option value="1">Voo cancelado</option>
+										<option value="2">Voo atrasado</option>
+										<option value="3">Overbooking</option>
+										<option value="4">Bagagem</option>
+									</select>
+								</div>
+							</div>
+
+						</div>
+					</section>
+					
+					<!-- campos subordinados da opção 1: cancelamento -->
+					<section class="opcao-1">
+							<div id="problema-11" class="invisivel">
+								<label for="tipo-cancel">Qual o motivo do cancelamento?</label>
+								<select name="entry.839337160" id="aaa-11" class="form-control">
+									<option disabled selected value="">Escolha uma opção...</option>
+									<option value="1">Climático</option>
+									<option value="2">Voo muito atrasado</option>
+									<option value="3">Problemas com a aeronave</option>
+								</select>
+
+								<div id="problema-111" class="invisivel">
+									<label for="tipo-cancelamento">Qual fator climático enfrentado?</label>
+									<select name="entry.476863189" id="aaa-111" class="form-control">
+										<option disabled selected value="">Escolha uma opção...</option>
+										<option value="1">Neve</option>
+										<option value="2">Chuva</option>
+										<option value="3">Vento</option>
+									</select>
+								</div>
+								<div id="problema-112" class="invisivel">
+									<label for="tipo-cancelamento">Por quantas horas esperou até cancelar?</label>
+									<select name="entry.82302703" id="aaa-112" class="form-control">
+										<option disabled selected value="">Escolha uma opção...</option>
+										<option value="1">Menos de 2h</option>
+										<option value="2">Entre 2h e 6h</option>
+										<option value="3">Mais de 6h</option>
+									</select>
+								</div>
+													
+							</div>
+					</section>
+
+					<!-- campos subordinados da opção 2: atraso -->
+					<section class="opcao-2">
+						<div id="problema-12" class="invisivel">
+							<label for="qtd-horas">Por quantas horas seu voo atrasou?</label>
+							<select name="entry.1142874749" id="aaa-12" class="form-control">
+								<option disabled selected value="">Escolha uma opção...</option>
+								<option value="1">Menos 4h</option>
+								<option value="2">Entre 4h e 8h</option>
+								<option value="3">Acima de 8h</option>
+							</select>
+							<div id="problema-121" class="invisivel">
+								<label for="qtd-horas">A empresa te deu lanche?</label>
+								<select name="entry.216407954" id="aaa-121" class="form-control">
+									<option disabled selected value="">Escolha uma opção...</option>
+									<option value="1">Sim</option>
+									<option value="2">Não</option>
+								</select>
+							</div>
+							<div id="problema-122" class="invisivel">
+								<label for="qtd-horas">A empresa te deu Hotel?</label>
+								<select name="entry.1678186098" id="aaa-122" class="form-control">
+									<option disabled selected value="">Escolha uma opção...</option>
+									<option value="1">Sim</option>
+									<option value="2">Não</option>
+								</select>
+							</div>												
+						</div>					
+					</section>
+
+					<!-- campos subordinados da opção 3: overbooking -->
+					<section class="opcao-3">
+						<div id="problema-13" class="invisivel">
+							<label for="qtd-horas">O que a empresa fez ao constatar o overbooking?</label>
+							<select name="entry.1061448330" id="aaa-13" class="form-control">
+								<option disabled selected value="">Escolha uma opção...</option>
+								<option value="1">Arrumou outra poltrona</option>
+								<option value="2">Deu nova passagem no proximo voo</option>
+								<option value="3">Nada</option>
+							</select>
+							<div id="problema-131" class="invisivel">
+								<label for="qtd-horas">Por que você não ficou satisfeito?</label>
+								<select name="entry.1246540602" id="aaa-131" class="form-control">
+									<option value="">Escolha uma opção...</option>
+									<option value="1">A poltrona era de classe inferior a que paguei</option>
+									<option value="2">Não gostei do lugar</option>
+									<option value="3">Me senti ofendido</option>
+								</select>
+							</div>
+						</div>
+					</section>
+
+					<!-- campos subordinados da opção 4: bagagem -->
+					<section class="opcao-4">
+						<div id="problema-14" class="invisivel">
+							<label for="qtd-horas">O que aconteceu com sua bagagem?</label>
+							<select name="entry.609587428" id="aaa-14" class="form-control">
+								<option disabled selected value="">Escolha uma opção...</option>
+								<option value="1">Extraviada</option>
+								<option value="2">Danificada</option>
+								<option value="3">Violada</option>
+								<option value="4">Violada e danificada</option>
+							</select>
+							<div id="problema-14" class="invisivel">
+								<label for="qtd-horas">O que mais aconteceu?</label>
+								<select name="entry.1701184606" id="aaa-141" class="form-control">
+									<option disabled selected value="">Escolha uma opção...</option>
+									<option value="1">Ficou verde</option>
+									<option value="2">Ficou azul</option>
+									<option value="3">Ficou laranja</option>
+									
+								</select>
+							</div>
+						</div>
+					</section>
+								
+
+					<section>
+						<div id="btn-continuar" class="row invisivel">
+		  					<div class="col-xs-2 col-md-offset-10">
+								<button id="enviar" type="submit" class="btn btn-primary btn-lg active">Continuar</button>
+							</div>
+						</div>
+						<span id="erro-ajax" class="invisivel">MSG de Erro ajax</span>
+					</section>
+				</form>
+				<h3 id="success-msg" style="text-align: center !important; margin-top:190px !important; display:none; color:#fff"> Your Request has been posted to Google Spreadsheet</h3>
+			</section>
+		</main>
+		
+		<script src="js/escolhas.js"></script><!-- script responsável por exibir e esconder as opções selecionadas-->
+		<script src="js/envio-dados.js"></script><!-- script responsável por enviar dados coletados no formumário-->
+	</body>
+</html>
